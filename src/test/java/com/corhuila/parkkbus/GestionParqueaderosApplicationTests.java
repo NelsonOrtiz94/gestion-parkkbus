@@ -1,11 +1,6 @@
 package com.corhuila.parkkbus;
 
-import com.corhuila.parkkbus.domain.port.ParkingSessionRepositoryPort;
-import com.corhuila.parkkbus.domain.port.PaymentRepositoryPort;
-import com.corhuila.parkkbus.domain.port.SpotRepositoryPort;
-import com.corhuila.parkkbus.domain.port.TariffRepositoryPort;
-import com.corhuila.parkkbus.domain.port.TokenServicePort;
-import com.corhuila.parkkbus.domain.port.UserRepositoryPort;
+import com.corhuila.parkkbus.domain.port.*;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
@@ -32,5 +27,4 @@ class GestionParqueaderosApplicationTests {
     @Test
     void contextLoads() {
     }
-
 }
