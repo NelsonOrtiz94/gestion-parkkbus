@@ -1,0 +1,12 @@
+# Diagrams
+
+Place architecture diagrams here (PNG, SVG, PlantUML, or draw.io files).
+
+## Suggested diagrams
+- `context-diagram.png` — C4 Level 1: System context
+- `container-diagram.png` — C4 Level 2: Containers
+- `component-diagram.png` — C4 Level 3: Components
+- `domain-model.png` — DDD domain model
+- `sequence-entry.png` — Vehicle entry sequence
+- `sequence-exit.png` — Vehicle exit & payment sequence
+

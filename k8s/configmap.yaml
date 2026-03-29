@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: parkkbus-config
+  namespace: parkkbus
+data:
+  SPRING_DATASOURCE_URL: "jdbc:postgresql://postgres-service:5432/parkkbus"
+  SPRING_DATASOURCE_USERNAME: "parkkbus"
+  SPRING_JPA_HIBERNATE_DDL_AUTO: "validate"
+  SPRING_PROFILES_ACTIVE: "prod"
+

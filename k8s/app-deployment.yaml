@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: parkkbus-app
+  namespace: parkkbus
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: parkkbus-app
+  template:
+    metadata:
+      labels:
+        app: parkkbus-app
+    spec:
+      containers:
+        - name: parkkbus-app
+          image: parkkbus:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: parkkbus-config
+            - secretRef:
+                name: parkkbus-secret
+          readinessProbe:
+            httpGet:
+              path: /actuator/health/readiness
+              port: 8080
+            initialDelaySeconds: 15
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /actuator/health/liveness
+              port: 8080
+            initialDelaySeconds: 30
+            periodSeconds: 20
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+

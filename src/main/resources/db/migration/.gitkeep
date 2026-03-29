@@ -1,0 +1,4 @@
+-- Flyway migration placeholder
+-- Add migration scripts here following the naming convention:
+-- V1__description.sql, V2__description.sql, etc.
+
