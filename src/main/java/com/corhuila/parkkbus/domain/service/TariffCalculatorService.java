@@ -15,7 +15,7 @@ public class TariffCalculatorService {
 
     /**
      * Calculates the total amount for a parking session based on the applicable tariff.
-     * Implements the Strategy pattern: each tariff type defines its own rate.
+     * Implements the Strategy pattern: each tariff type defines its own rate, but the calculation logic is centralized here.
      */
     public BigDecimal calculate(ParkingSession session, Tariff tariff) {
         if (session.getExitTime() == null) {
