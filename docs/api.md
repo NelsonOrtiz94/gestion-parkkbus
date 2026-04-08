@@ -9,7 +9,7 @@ Authorization: Bearer <token>
 
 ---
 
-## 🔑 Autenticación
+##  Autenticación
 
 ### POST `/auth/login`
 Autentica un usuario y devuelve un token JWT.
@@ -37,7 +37,7 @@ Autentica un usuario y devuelve un token JWT.
 
 ---
 
-## 🚗 Gestión de Parqueadero
+##  Gestión de Parqueadero
 
 ### POST `/api/parking/entry`
 Registra la entrada de un vehículo y asigna un espacio disponible.
@@ -103,7 +103,7 @@ Registra la salida de un vehículo y calcula el monto a pagar.
 
 ---
 
-## 📊 Reportes
+##  Reportes
 
 ### GET `/api/reports/spots/available`
 Devuelve la lista de espacios disponibles.
@@ -149,7 +149,7 @@ GET /api/reports/occupancy?from=2026-03-01&to=2026-03-28
 
 ---
 
-## ⚠️ Manejo de errores
+##  Manejo de errores
 
 Todos los errores siguen este formato:
 
@@ -171,7 +171,7 @@ Todos los errores siguen este formato:
 
 ---
 
-## 🔢 Lógica de tarifas
+## Lógica de tarifas
 
 El cálculo de tarifa aplica las siguientes reglas:
 
