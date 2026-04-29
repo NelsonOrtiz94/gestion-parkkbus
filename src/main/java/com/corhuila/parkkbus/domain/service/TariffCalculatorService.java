@@ -19,7 +19,7 @@ public class TariffCalculatorService {
      */
     public BigDecimal calculate(ParkingSession session, Tariff tariff) {
         if (session.getExitTime() == null) {
-            throw new IllegalStateException("Cannot calculate tariff: session has no exit tim");
+            throw new IllegalStateException("Cannot calculate tariff: session has no exit time");
         }
 
         Duration duration = Duration.between(session.getEntryTime(), session.getExitTime());
